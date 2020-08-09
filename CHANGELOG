@@ -1,0 +1,18 @@
+dcLatestVersionsLight :
+0.1 - Nan'Art
+* corrections _admin.php
+* suppression widget
+
+dcLatestVersions :
+2015-03-11 - Pierre Van Glabeke
+* ajout mode hors ligne et codage titre widget (widget)
+* encodage UNIX (LF)
+* modif url de support
+* modifs localisation
+* suppression icône
+
+2013.11.18 - Jean-Christian Denis
+* First hg release
+
+2013.07.22 - Jean-Christian Denis
+* First release
