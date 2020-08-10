@@ -17,14 +17,10 @@
  * define plugin' install:
 	- Dotclear version min 2.16 -- tested on
 	- Php version min 7.4.1 	-- tested on
-	- module_id					-- module title, settings & user pref names
-	- module_setting			-- setting name and content
-	- module_setting			-- setting name and content
+	- module_id					-- module title
 	- user prefs
 		. workspace 			-- workspace name
 		. pref_show				-- user pref name
-	- versions					-- updated version ?
-	- plugin versions compare -- update ?
  */
 /* dcLatestVersionsLight/_install.php */
 
@@ -41,14 +37,6 @@ if (!defined('DC_CONTEXT_ADMIN')) {
 /*------please, dont change bellow---------*/
 #module id
 	$module_id = 'dcLatestVersionsLight';
-#module_setting
-	$module_setting = [
-		[	'versions_type',
-			"List of Dotclear's builds",
-			'stable,unstable,testing,sexy', //sexy ignore?
-			'string'
-		]
-	];
 #user prefs
 	$workspace		= 'dcLatestVersionsLight';
 	$pref_show		= 'dclv_show_on_dashboard';
@@ -70,14 +58,6 @@ try {
 			throw new Exception(sprintf(
 				'%s requires Dotclear %s', $module_id, $dc_min
 			));
-		}
-
-	# Set module settings
-		$core->blog->settings->addNamespace($module_id);
-		foreach($module_setting as $v) {
-			$core->blog->settings->{$module_id}->put(
-				$v[0], $v[2], $v[3], $v[1], true, true
-			);
 		}
 
 	# Set module user prefs

@@ -28,8 +28,6 @@
  */
 /* dcLatestVersionsLight/_define.php */
 
-/* projet: renommer en dcRecentVersions ou dcAllLatestsVersions */
-
 if (!defined('DC_RC_PATH')) {
 	return null;
 }
@@ -48,7 +46,12 @@ $this->registerModule(
 		'requires'    => [['core', '2.16']],				// dotclear min version (tested)
 		'permissions' => 'contentadmin',					// Permissions all admin dashboard user
 		'type' => 'plugin',									// type
-		'priority' => 		2000							//priority
+		'priority' => 		2000,							//priority
+		'support' => 'https://github.com/nanart59/dcLatestVersionsLight',
+		'details' => 'https://github.com/nanart59/dcLatestVersionsLight',
+		'settings'    => [									// Settings
+			'pref' => '#user-favorites.dcLatestVersionsLight'
+			],
 	]
 );
 

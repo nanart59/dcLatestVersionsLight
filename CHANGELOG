@@ -1,7 +1,10 @@
 dcLatestVersionsLight :
 0.1 - Nan'Art
+* version "light"
 * corrections _admin.php
+* ajout index.php -- show url vers user pref
 * suppression widget
+* suppression setting
 
 dcLatestVersions :
 2015-03-11 - Pierre Van Glabeke
