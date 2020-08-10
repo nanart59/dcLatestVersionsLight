@@ -22,7 +22,7 @@
 if (!defined('DC_CONTEXT_ADMIN')) {return;}
 
 #debug ?
-//*/
+/*/
 	define("DEBUG", true);
 //*/
 
