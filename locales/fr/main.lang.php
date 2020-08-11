@@ -1,5 +1,5 @@
 <?php
-// Language: Français 
+// Language: Français french
 // Module: dcLatestVersionsLight - 0.1
 // Date: 2020-08-10 14:55:54 
 // Translated with dcTranslater - 2018.10.26 
