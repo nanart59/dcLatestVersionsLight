@@ -57,7 +57,7 @@ if(!defined('DEBUG') || !DEBUG) { return; }
 			if($files) { 
 				echo printR($files, __('cache versions content')); 
 			} else {
-				$error = sprintf(__('There is  no file in your cache versions dir %s. Test %s.'), $cache_versions, __('force dotclear update'));
+				$error = sprintf(__('There is no file in your cache versions dir %s. Test %s.'), $cache_versions, __('force dotclear update'));
 				dcPage::addErrorNotice($error);
 				return;
 			}
