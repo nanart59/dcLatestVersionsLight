@@ -5,13 +5,13 @@
 // Translated with dcTranslater - 2018.10.26 
 
 #_admin.php:35
-$GLOBALS['__l10n']['dcLatestVersionsLight'] = 'Plugin dernières versions de Doclear';
+$GLOBALS['__l10n']['dcLatestVersionsLight'] = 'Dernières versions de Doclear';
 
 #_admin.php:35
 $GLOBALS['__l10n']['Show the latest available versions of Dotclear in dashboard'] = 'Affiche les dernières versions de Dotclear sur le tableau de bord';
 
 #_admin.php:76
-$GLOBALS['__l10n']['Dotclear latests versions lite'] = 'Plugin dcLatestVersions, version "légère"';
+$GLOBALS['__l10n']['Dotclear latests versions lite'] = 'dcLatestVersions, version "légère"';
 
 #_admin.php:103
 $GLOBALS['__l10n']['Show Dotclear latests versions'] = 'Montrer les dernières versions de Dotclear';
@@ -37,11 +37,11 @@ $GLOBALS['__l10n']['exists'] = 'existe';
 $GLOBALS['__l10n']['dont exists!'] = 'n\'existe pas !';
 
 #debug.php:48
-$GLOBALS['__l10n']['your cache versions dir %s dont exists ! Test %s.'] = 'Le  répertoire cache des versions %s n\'existe pas ! Essayer %s.';
+$GLOBALS['__l10n']['your cache versions dir %s dont exists ! Test %s.'] = 'Le répertoire cache des versions %s n\'existe pas ! Essayer %s.';
 
 #debug.php:48
 #debug.php:60
-$GLOBALS['__l10n']['force dotclear update'] = 'de  forcer la mise à jour de Dotclear';
+$GLOBALS['__l10n']['force dotclear update'] = 'de forcer la mise à jour de Dotclear';
 
 #debug.php:53
 $GLOBALS['__l10n']['as files'] = 'contient des fichiers';
@@ -53,7 +53,7 @@ $GLOBALS['__l10n']['as no file!!'] = 'ne contient aucun fichier!!';
 $GLOBALS['__l10n']['cache versions content'] = 'Contenu du cache versions';
 
 #debug.php:60
-$GLOBALS['__l10n']['There is  no file in your cache versions dir %s. Test %s.'] = 'Il n\'y a aucun fichier dans le cache versions dir %s. Test %s.';
+$GLOBALS['__l10n']['There is no file in your cache versions dir %s. Test %s.'] = 'Il n\'y a aucun fichier dans le cache versions dir %s. Test %s.';
 
 #debug.php:108
 $GLOBALS['__l10n']['what should be displayed'] = 'Ce qui devrait être affiché';
@@ -62,10 +62,10 @@ $GLOBALS['__l10n']['what should be displayed'] = 'Ce qui devrait être affiché'
 $GLOBALS['__l10n']['from'] = 'de';
 
 #index.php:57
-$GLOBALS['__l10n']['show on dashboard.'] = 'affiché sur le tableau de bord.';
+$GLOBALS['__l10n']['show on dashboard.'] = 'montrer sur le tableau de bord.';
 
 #index.php:57
-$GLOBALS['__l10n']['not display on dashboard.'] = 'pas montré sur le tableau de bord.';
+$GLOBALS['__l10n']['not display on dashboard.'] = 'ne pas montrer sur le tableau de bord.';
 
 #index.php:82
 $GLOBALS['__l10n']['your current %s status is \'<i>%s</i>\''] = 'vos préférences actuelles %s sont \'<i>%s</i>\'';
