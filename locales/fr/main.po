@@ -17,7 +17,7 @@ msgstr ""
 
 #: _admin.php:35
 msgid "dcLatestVersionsLight"
-msgstr "Plugin dernières versions de Doclear"
+msgstr "Dernières versions de Doclear"
 
 #: _admin.php:35
 msgid "Show the latest available versions of Dotclear in dashboard"
@@ -25,7 +25,7 @@ msgstr "Affiche les dernières versions de Dotclear sur le tableau de bord"
 
 #: _admin.php:76
 msgid "Dotclear latests versions lite"
-msgstr "Plugin dcLatestVersions, version \"légère\""
+msgstr "dcLatestVersions, version \"légère\""
 
 #: _admin.php:103
 msgid "Show Dotclear latests versions"
@@ -59,12 +59,12 @@ msgstr "n'existe pas !"
 
 #: debug.php:48
 msgid "your cache versions dir %s dont exists ! Test %s."
-msgstr "Le  répertoire cache des versions %s n'existe pas ! Essayer %s."
+msgstr "Le répertoire cache des versions %s n'existe pas ! Essayer %s."
 
 #: debug.php:48
 #: debug.php:60
 msgid "force dotclear update"
-msgstr "de  forcer la mise à jour de Dotclear"
+msgstr "de forcer la mise à jour de Dotclear"
 
 #: debug.php:53
 msgid "as files"
@@ -79,7 +79,7 @@ msgid "cache versions content"
 msgstr "Contenu du cache versions"
 
 #: debug.php:60
-msgid "There is  no file in your cache versions dir %s. Test %s."
+msgid "There is no file in your cache versions dir %s. Test %s."
 msgstr "Il n'y a aucun fichier dans le cache versions dir %s. Test %s."
 
 #: debug.php:108
@@ -92,11 +92,11 @@ msgstr "de"
 
 #: index.php:57
 msgid "show on dashboard."
-msgstr "affiché sur le tableau de bord."
+msgstr "montrer sur le tableau de bord."
 
 #: index.php:57
 msgid "not display on dashboard."
-msgstr "pas montré sur le tableau de bord."
+msgstr "ne pas montrer sur le tableau de bord."
 
 #: index.php:82
 msgid "your current %s status is '<i>%s</i>'"
