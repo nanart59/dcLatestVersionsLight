@@ -100,11 +100,13 @@ msgstr "ne pas montrer sur le tableau de bord."
 
 #: index.php:82
 msgid "your current %s status is '<i>%s</i>'"
-msgstr "vos préférences actuelles %s sont '<i>%s</i>'"
+msgstr "vos %s sont '<i>%s</i>'"
+msgid "preferences about dotclear updates"
+msgstr "preferences pour les mises à jour de dotclear"
 
 #: index.php:86
 msgid "You can change this options in your %s %s."
-msgstr "Vous pouve modifier ces options dans %s %s."
+msgstr "Vous pouvez modifier ces options dans %s %s."
 
 #: index.php:90
 msgid "also see below."

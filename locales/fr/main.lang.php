@@ -68,7 +68,8 @@ $GLOBALS['__l10n']['show on dashboard.'] = 'montrer sur le tableau de bord.';
 $GLOBALS['__l10n']['not display on dashboard.'] = 'ne pas montrer sur le tableau de bord.';
 
 #index.php:82
-$GLOBALS['__l10n']['your current %s status is \'<i>%s</i>\''] = 'vos préférences actuelles %s sont \'<i>%s</i>\'';
+$GLOBALS['__l10n']['your current %s status is \'<i>%s</i>\''] = 'vos %s sont \'<i>%s</i>\'';
+$GLOBALS['__l10n']['preferences about dotclear updates'] = 'preferences pour les mises à jour de dotclear';
 
 #index.php:86
 $GLOBALS['__l10n']['You can change this options in your %s %s.'] = 'Vous pouve modifier ces options dans %s %s.';
