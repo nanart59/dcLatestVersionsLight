@@ -61,7 +61,7 @@ if(!defined('DEBUG') || !DEBUG) { return; }
 				dcPage::addErrorNotice($error);
 				return;
 			}
-		#wich versions type
+		#witch versions type
 		foreach($builds as $build) {
 			$build = strtolower(trim($build));
 				if (empty($build)) {
