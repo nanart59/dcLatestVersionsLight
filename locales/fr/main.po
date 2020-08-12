@@ -1,0 +1,131 @@
+# Language: Français
+# Module: dcLatestVersionsLight - 0.1
+# Date: 2020-08-12 23:11:59
+# Translated with translater 2018.10.26
+
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: dcLatestVersionsLight 0.1\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2020-08-12T23:11:59+00:00\n"
+"Last-Translator: nanart\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: _admin.php:35
+msgid "dcLatestVersionsLight"
+msgstr "Dotclear versions - light"
+
+#: _admin.php:35
+msgid "Show the latest available versions of Dotclear in dashboard"
+msgstr "Montrer les dernières versions sur le tableau de bord"
+
+#: _admin.php:76
+msgid "Dotclear latests versions light"
+msgstr "Dotclear versions - light"
+
+#: _admin.php:107
+msgid "Dotclear latests versions  - light"
+msgstr "Dotclear versions - light"
+
+#: _admin.php:112
+msgid "Show Dotclear's latest versions on dashboard."
+msgstr "Montrer les dernières versions sur le tableau de bord"
+
+#: _admin.php:172
+msgid "<li><a href=\"%u\" title=\"Download Dotclear %v\">%r</a> : %v</li>"
+msgstr "<li><a href=\"%u\" title=\"télécharger la version %v\">%r</a> : %v</li>"
+
+#: _admin.php:220
+msgid "Dotclear latests versions - light"
+msgstr "Dotclear versions - light"
+
+#: debug.php:39
+msgid "<li><a href=\"%u\" title=\"Download Dotclear version %v\">%r</a> : %v</li>"
+msgstr "<li><a href=\"%u\" title=\"Télécharger la version %v\">%r</a> : %v</li>"
+
+#: debug.php:44
+msgid "exists"
+msgstr "existe"
+
+#: debug.php:44
+msgid "dont exists!"
+msgstr "n'existe pas"
+
+#: debug.php:48
+msgid "your cache versions dir %s dont exists ! Test %s."
+msgstr "Le répertoire cache des versions %s n'existe pas ! Essayer de %s"
+
+#: debug.php:48
+#: debug.php:60
+msgid "force dotclear update"
+msgstr "forcer les mises à jour de Dotclear"
+
+#: debug.php:53
+msgid "as files"
+msgstr "contient des fichiers"
+
+#: debug.php:53
+msgid "as no file!!"
+msgstr "ne contient aucun fichier"
+
+#: debug.php:58
+msgid "cache versions content"
+msgstr "contenut du cache versions"
+
+#: debug.php:60
+msgid "There is no file in your cache versions dir %s. Test %s."
+msgstr "Il n'y a aucun fichier dans le répertoire cache versions %s. Essayer de %s"
+
+#: debug.php:104
+#: debug.php:114
+msgid "Dotclear's latest versions"
+msgstr "Dernières versions Dotclear"
+
+#: debug.php:108
+msgid "what should be displayed"
+msgstr "ce qui devrait être affiché"
+
+#: debug.php:140
+msgid "from"
+msgstr "de"
+
+#: index.php:51
+msgid "Plugin informations"
+msgstr "Informations plugin"
+
+#: index.php:52
+msgid "plugin %s information"
+msgstr "informationsplugin %s"
+
+#: index.php:57
+msgid "show on dashboard."
+msgstr "montrer sur le tableau de bord"
+
+#: index.php:57
+msgid "not display on dashboard."
+msgstr "ne pas afficher sur le tableau de bord"
+
+#: index.php:82
+msgid "your current %s status is '<i>%s</i>'"
+msgstr "Vos %s sont '<i>%s</i>'"
+
+#: index.php:82
+msgid "preferences about dotclear updates"
+msgstr "préférences à propos des mises à jour de Dotclear"
+
+#: index.php:86
+msgid "You can change this options in your %s %s."
+msgstr "Vous pouvez modifier ces options dans vos %s %s."
+
+#: index.php:89
+msgid "Preferences on Dashboard"
+msgstr "Préférences sur le tableau de bord"
+
+#: index.php:90
+msgid "also see below."
+msgstr "voir aussi ci-dessous"
+
