@@ -22,7 +22,7 @@
 if (!defined('DC_CONTEXT_ADMIN')) {return;}
 
 #debug ?
-/*/
+//*/
 	define("DEBUG", true);
 //*/
 
@@ -86,7 +86,7 @@ $version_types	= 'stable,unstable,testing,sexy';
 					__('You can change this options in your %s %s.'),
 					'<a href="' . $core->adminurl->get('admin.user.preferences') 
 								. '#user-favorites.dcLatestVersionsLight">' 
-								. __('Dashboard') . '</a>',
+								. __('Preferences on Dashboard') . '</a>',
 					'<br><i>' .__('also see below.') .'</i>'
 						);
 		?>
