@@ -73,7 +73,7 @@ class dcLatestVersionsLightAdmin
 		$plugin_name = self::$module_id;
 		
 		$favs->register('dcLatestVersionsLight', [
-			'title'		=> __('Dotclear latests versions lite'),
+			'title'		=> __('Dotclear latests versions light'),
 			'url'		  => $core->adminurl->get('admin.plugin.' .$plugin_name),
 			'small-icon'   => dcPage::getPF($plugin_name .'/icon.png'),
 			'large-icon'   => dcPage::getPF($plugin_name .'/icon-big.png'),
@@ -97,10 +97,15 @@ class dcLatestVersionsLightAdmin
 			$show		= 	self::$pref_show;
 			$show_value = $core->auth->user_prefs->$workspace->$show;
 
-
+		//some plugin infos
+		#plugin name
+			$p_name = self::$module_id;
+		#plugin version
+			$p_version = $core->plugins->moduleInfo($p_name, 'version');
 
 		echo '<div class="fieldset" id="' .$workspace .'">';
-		echo '<h4>' . __('Show Dotclear latests versions') . '</h4>';
+		echo '<h4>' . __('Dotclear latests versions  - light') .'</h4>';
+		// echo '<p>'  .' <i>(v. light:' .$p_version .')</i>'.'</p>';
 		echo '<p>';
 			echo '<label for="' .$show .'" class="classic">';
 				echo form::checkbox($show, 1, $show_value);
@@ -201,50 +206,21 @@ class dcLatestVersionsLightAdmin
 		}
 
 		if (empty($li)) { return null; }
-		
+
+
+		//some plugin infos
+		#plugin name
+			$p_name = self::$module_id;
+		#plugin version
+			$p_version = $core->plugins->moduleInfo($p_name, 'version');
+
 		# Display
         $items[] = new ArrayObject([
 		'<div class="box small" id="udclatestversionsitems">'.
-		'<h3>' .'<img src="' . dcPage::getPF("$module_id/icon-small.png") . '" alt="" /> ' .html::escapeHTML(__("Dotclear's latest versions")).'</h3>'.
+		'<h3>' .'<img src="' . dcPage::getPF("$module_id/icon-small.png") . '" alt="" /> ' .html::escapeHTML(__("Dotclear latests versions - light")) .'</h3>'.
 		'<ul>'.implode('', $li).'</ul>'.
 		'</div>'
-        ]);
+ ]);
 	}//adminDashboardItems
-
-/*/
-        $lines = [];
-        foreach ($maintenance->getTasks() as $t) {
-            $ts = $t->expired();
-            if ($ts === false) {
-                continue;
-            }
-
-            $lines[] =
-            '<li title="' . ($ts === null ?
-                __('This task has never been executed.')
-                :
-                sprintf(__('Last execution of this task was on %s.'),
-                    dt::dt2str($core->blog->settings->system->date_format, $ts) . ' ' .
-                    dt::dt2str($core->blog->settings->system->time_format, $ts)
-                )
-            ) . '">' . $t->task() . '</li>';
-        }
-
-        if (empty($lines)) {
-            return;
-        }
-
-        $items[] = new ArrayObject([
-            '<div id="maintenance-expired" class="box small">' .
-            '<h3><img src="' . dcPage::getPF('maintenance/icon-small.png') . '" alt="" /> ' . __('Maintenance') . '</h3>' .
-            '<p class="warning no-margin">' . sprintf(__('There is a task to execute.', 'There are %s tasks to execute.', count($lines)), count($lines)) . '</p>' .
-            '<ul>' . implode('', $lines) . '</ul>' .
-            '<p><a href="' . $core->adminurl->get('admin.plugin.maintenance') . '">' . __('Manage tasks') . '</a></p>' .
-            '</div>'
-        ]);
-//*/
-
-
-
 
 }//dcLatestVersionsLightAdmin
