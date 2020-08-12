@@ -1,20 +1,20 @@
 <?php
 // Language: Français 
 // Module: dcLatestVersionsLight - 0.1
-// Date: 2020-08-12 22:50:48 
+// Date: 2020-08-12 23:11:59 
 // Translated with dcTranslater - 2018.10.26 
 
 #_admin.php:35
-$GLOBALS['__l10n']['dcLatestVersionsLight'] = 'Dotclear dernières versions - light';
+$GLOBALS['__l10n']['dcLatestVersionsLight'] = 'Dotclear versions - light';
 
 #_admin.php:35
 $GLOBALS['__l10n']['Show the latest available versions of Dotclear in dashboard'] = 'Montrer les dernières versions sur le tableau de bord';
 
 #_admin.php:76
-$GLOBALS['__l10n']['Dotclear latests versions light'] = 'Dotclear dernières versions - light';
+$GLOBALS['__l10n']['Dotclear latests versions light'] = 'Dotclear versions - light';
 
 #_admin.php:107
-$GLOBALS['__l10n']['Dotclear latests versions  - light'] = 'Dotclear dernières versions - light';
+$GLOBALS['__l10n']['Dotclear latests versions  - light'] = 'Dotclear versions - light';
 
 #_admin.php:112
 $GLOBALS['__l10n']['Show Dotclear\'s latest versions on dashboard.'] = 'Montrer les dernières versions sur le tableau de bord';
@@ -23,7 +23,7 @@ $GLOBALS['__l10n']['Show Dotclear\'s latest versions on dashboard.'] = 'Montrer 
 $GLOBALS['__l10n']['<li><a href="%u" title="Download Dotclear %v">%r</a> : %v</li>'] = '<li><a href="%u" title="télécharger la version %v">%r</a> : %v</li>';
 
 #_admin.php:220
-$GLOBALS['__l10n']['Dotclear latests versions - light'] = 'Dotclear dernières versions - light';
+$GLOBALS['__l10n']['Dotclear latests versions - light'] = 'Dotclear versions - light';
 
 #debug.php:39
 $GLOBALS['__l10n']['<li><a href="%u" title="Download Dotclear version %v">%r</a> : %v</li>'] = '<li><a href="%u" title="Télécharger la version %v">%r</a> : %v</li>';
@@ -52,6 +52,10 @@ $GLOBALS['__l10n']['cache versions content'] = 'contenut du cache versions';
 
 #debug.php:60
 $GLOBALS['__l10n']['There is no file in your cache versions dir %s. Test %s.'] = 'Il n\'y a aucun fichier dans le répertoire cache versions %s. Essayer de %s';
+
+#debug.php:104
+#debug.php:114
+$GLOBALS['__l10n']['Dotclear\'s latest versions'] = 'Dernières versions Dotclear';
 
 #debug.php:108
 $GLOBALS['__l10n']['what should be displayed'] = 'ce qui devrait être affiché';

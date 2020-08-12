@@ -1,6 +1,6 @@
 # Language: Français
 # Module: dcLatestVersionsLight - 0.1
-# Date: 2020-08-12 22:50:48
+# Date: 2020-08-12 23:11:59
 # Translated with translater 2018.10.26
 
 msgid ""
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: dcLatestVersionsLight 0.1\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2020-08-12T22:50:48+00:00\n"
+"PO-Revision-Date: 2020-08-12T23:11:59+00:00\n"
 "Last-Translator: nanart\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: _admin.php:35
 msgid "dcLatestVersionsLight"
-msgstr "Dotclear dernières versions - light"
+msgstr "Dotclear versions - light"
 
 #: _admin.php:35
 msgid "Show the latest available versions of Dotclear in dashboard"
@@ -25,11 +25,11 @@ msgstr "Montrer les dernières versions sur le tableau de bord"
 
 #: _admin.php:76
 msgid "Dotclear latests versions light"
-msgstr "Dotclear dernières versions - light"
+msgstr "Dotclear versions - light"
 
 #: _admin.php:107
 msgid "Dotclear latests versions  - light"
-msgstr "Dotclear dernières versions - light"
+msgstr "Dotclear versions - light"
 
 #: _admin.php:112
 msgid "Show Dotclear's latest versions on dashboard."
@@ -41,7 +41,7 @@ msgstr "<li><a href=\"%u\" title=\"télécharger la version %v\">%r</a> : %v</li
 
 #: _admin.php:220
 msgid "Dotclear latests versions - light"
-msgstr "Dotclear dernières versions - light"
+msgstr "Dotclear versions - light"
 
 #: debug.php:39
 msgid "<li><a href=\"%u\" title=\"Download Dotclear version %v\">%r</a> : %v</li>"
@@ -79,6 +79,11 @@ msgstr "contenut du cache versions"
 #: debug.php:60
 msgid "There is no file in your cache versions dir %s. Test %s."
 msgstr "Il n'y a aucun fichier dans le répertoire cache versions %s. Essayer de %s"
+
+#: debug.php:104
+#: debug.php:114
+msgid "Dotclear's latest versions"
+msgstr "Dernières versions Dotclear"
 
 #: debug.php:108
 msgid "what should be displayed"
