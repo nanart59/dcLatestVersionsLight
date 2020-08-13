@@ -24,7 +24,7 @@
 		. require (tested)php 7.3.1
 		- usage: content all & admin
 		- setting: user pref favorite
-	- to do: add support & detail (github?), tests on php < 7 & Dotclear < 2.16
+	- to do: tests on Dotclear < 2.16
  */
 /* dcLatestVersionsLight/_define.php */
 
@@ -43,13 +43,13 @@ $this->registerModule(
 	'0.1',
 	/* Properties */
 	[
-		'requires'    => [['core', '2.16']],				// dotclear min version (tested)
+		'requires'    => [['core', '2.16']],				        // dotclear min version (tested)
 		'permissions' => 'contentadmin',					// Permissions all admin dashboard user
-		'type' => 'plugin',									// type
-		'priority' => 		2000,							//priority
+		'type' => 'plugin',							// type
+		'priority' => 		2000,						//priority
 		'support' => 'https://github.com/nanart59/dcLatestVersionsLight',
 		'details' => 'https://github.com/nanart59/dcLatestVersionsLight',
-		'settings'    => [									// Settings
+		'settings'    => [							// Settings
 			'pref' => '#user-favorites.dcLatestVersionsLight'
 			],
 	]
