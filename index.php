@@ -30,7 +30,7 @@ if (!defined('DC_CONTEXT_ADMIN')) {return;}
 	$dc_min = '2.16';
 #php min version (tested)
 #@ignore
-	$php_min = '7.4.1';
+	$php_min = '5.6.40'; //also tested on 7.4x
 
 /*------please, dont change bellow---------*/
 #module id
