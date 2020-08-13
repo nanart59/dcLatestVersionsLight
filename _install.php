@@ -16,11 +16,11 @@
  * 
  * define plugin' install:
 	- Dotclear version min 2.16 -- tested on
-	- Php version min 7.4.1 	-- tested on
-	- module_id					-- module title
+	- Php version min 5.6.40    -- also tested on 7.4.1
+	- module_id		    -- module title
 	- user prefs
-		. workspace 			-- workspace name
-		. pref_show				-- user pref name
+		. workspace 		-- workspace name
+		. pref_show		-- user pref name
  */
 /* dcLatestVersionsLight/_install.php */
 
@@ -32,7 +32,7 @@ if (!defined('DC_CONTEXT_ADMIN')) {
 	$dc_min = '2.16';
 #php min version (tested)
 #@ignore
-	$php_min = '7.4.1';
+	$php_min = '5.6.40';
 
 /*------please, dont change bellow---------*/
 #module id
