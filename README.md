@@ -23,3 +23,9 @@ First install dcLatestVersionsLight, manualy from a zip package.
 Add and configure "Dotclear's latest versions" from plugin or user preferences interfaces.
 You can add a dashboard item by enable it from your dashboard preferences.
 
+
+admin dashboard 01
+![Screenshot](interfaces captures #1)
+
+
+
