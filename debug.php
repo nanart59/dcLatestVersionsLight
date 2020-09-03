@@ -20,7 +20,7 @@
 /* dcLatestVersionsLight/debug.php */
 
 if (!defined('DC_CONTEXT_ADMIN')) {return;}
-if(!defined('DEBUG') || !DEBUG) { return; }
+if(!defined('PLUG_DEBUG') || !PLUG_DEBUG) { return; }
 
 		#user pref
 			$core->auth->user_prefs->addWorkspace($workspace);
@@ -78,7 +78,7 @@ if(!defined('DEBUG') || !DEBUG) { return; }
 			if (!$updater->check($build)) {
 				continue;
 			}
-// echo "version: '$build' ->" .$updater->getVersion() .'<br/>';
+
 			$li[] = str_replace(
 				array(
 					'%r',
@@ -95,8 +95,6 @@ if(!defined('DEBUG') || !DEBUG) { return; }
 			);
 		}//foreach
 
-// echo printR($li, 'liens versions');
-
 if($li) {
 		# Display
 		$items[] =
@@ -106,16 +104,6 @@ if($li) {
 		'</div>';
 }
 	if(isset($items)) { echo printR($items[0], __('what should be displayed')); }
-
-
-/*/
-        $items[] = new ArrayObject([
-		'<div class="box small" id="udclatestversionsitems">'.
-		'<h3>' .'<img src="' . dcPage::getPF("$module_id/icon-small.png") . '" alt="" /> ' .html::escapeHTML(__("Dotclear's latest versions")).'</h3>'.
-		'<ul>'.implode('', $li).'</ul>'.
-		'</div>'
-        ]);
-//*/
 
 
 	/**
