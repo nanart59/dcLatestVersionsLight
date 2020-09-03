@@ -74,7 +74,7 @@ msgstr "ne contient aucun fichier"
 
 #: debug.php:58
 msgid "cache versions content"
-msgstr "contenut du cache versions"
+msgstr "contenu du cache versions"
 
 #: debug.php:60
 msgid "There is no file in your cache versions dir %s. Test %s."
