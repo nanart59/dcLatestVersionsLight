@@ -24,7 +24,6 @@
  */
 /* dcLatestVersionsLight/_admin.php */
 
-
 if (!defined('DC_RC_PATH')) { return; }
 // Public and Admin mode
 
@@ -60,7 +59,6 @@ class dcLatestVersionsLightAdmin
 	public static	$version_types	= 'stable,unstable,testing,sexy'; //sexy ignore?
 	public static	$versions_cache	= '/versions';
 
-
     /**
      * Favorites.
      *
@@ -81,7 +79,6 @@ class dcLatestVersionsLightAdmin
 			// 'dashboard_cb' => [$class, 'adminDashboardItems']
 		]);
 	}//adminDashboardFavorites
-
 
 	/**
 	 * User preferences form.
@@ -115,7 +112,6 @@ class dcLatestVersionsLightAdmin
 		echo '</div>';
 	}//adminDashboardOptionsForm
 
-
 	/**
 	 * User preferences form get updated form
 	 *
@@ -142,7 +138,6 @@ class dcLatestVersionsLightAdmin
         }
 
 	}//adminAfterDashboardOptionsUpdate
-
 
 	/**
 	 * set show on dashboard
