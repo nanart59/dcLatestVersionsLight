@@ -48,7 +48,7 @@ $GLOBALS['__l10n']['as files'] = 'contient des fichiers';
 $GLOBALS['__l10n']['as no file!!'] = 'ne contient aucun fichier';
 
 #debug.php:58
-$GLOBALS['__l10n']['cache versions content'] = 'contenut du cache versions';
+$GLOBALS['__l10n']['cache versions content'] = 'contenu du cache versions';
 
 #debug.php:60
 $GLOBALS['__l10n']['There is no file in your cache versions dir %s. Test %s.'] = 'Il n\'y a aucun fichier dans le répertoire cache versions %s. Essayer de %s';
