@@ -139,10 +139,7 @@ function printR($value, $title ='') {
 			$message .= "<b>$title</b>";
 			$message .= ' -- ' .__('from') .': ' .$call['file'] .'|' .$call['line'];
 			$message = '<hr>' .'<p class="as_h4" id="' .$call['line'] .'">' .$message;
-			$message .= '<p>';
-			$message .= '<pre class="pre">';
 			$message .= print_r($value, true);
-			$message .= '</pre>';
 			$message .= '<hr>';
 
 		return $message;
