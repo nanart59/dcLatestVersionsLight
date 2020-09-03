@@ -17,13 +17,13 @@
  * define plugin' admin page:
 	- just give user pref (+ url)
  */
-/* dcLatestVersionsLight/ndex.php */
+/* dcLatestVersionsLight/index.php */
 
 if (!defined('DC_CONTEXT_ADMIN')) {return;}
 
 #debug ?
 /*/
-	define("DEBUG", true);
+	define("PLUG_DEBUG", true);
 //*/
 
 #dc min version (tested)
@@ -92,13 +92,16 @@ $version_types	= 'stable,unstable,testing,sexy';
 		?>
 	</p>
 <?php
-/* just if DEBUG */
-if(defined('DEBUG') && DEBUG) {
+/* just if PLUG_DEBUG */
+if(defined('PLUG_DEBUG') && PLUG_DEBUG) {
 	$file = dirname(__FILE__) .'/debug.php';
 		if(file_exists($file)) {
 			require_once $file;
 		}
-}//if DEBUG
+}//if PLUG_DEBUG
+
+/* help */
+dcPage::helpBlock('dcLatestVersionsLight');
 ?>
 </body>
 </html>
