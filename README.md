@@ -56,7 +56,7 @@ Ajouter et configurer dcLatestVersionsLight depuis l'interface admin du plugin o
 Vous pouvez ajouter l'item sur sur votre tableau de bord en l'activant depuis l'interface préférences utilisateur.
 You can add a dashboard item by enable it from your dashboard preferences.
 
-
+---
 ### Admin dashboard view
 ![Screenshot](https://user-images.githubusercontent.com/62995223/90084038-86ddf900-dd14-11ea-85f7-e22417e300fb.jpg)
 
