@@ -1,37 +1,67 @@
 # dcLatestVersionsLight
-# README
+# README EN
 
 ## WHAT IS DCLATESTVERSIONSLIGHT ?
 
 "Dotclear's latest versions light" is a plugin for the open-source 
-web publishing software called Dotclear.
+web publishing software called __Dotclear__.
 
-Simply show administrators last versions of nightly build of Dotclear.
+Simply show administrators last versions of nightly build of Dotclear:
+_(stable, testings and unstable)_
 
 ## REQUIREMENTS
 
- dcLatestVersions requires: 
+ dcLatestVersionsLight requires: 
 
-  * permissions to user preferences
+  * permissions to user admin preferences
   * Dotclear 2.16
+  * tested on php 5.6.40
 
 ## USAGE
 
 First install dcLatestVersionsLight, manualy from a zip package.
-(See Dotclear's documentation to know how do this)
+__(See Dotclear's documentation to know how do this)__
 
-Add and configure "Dotclear's latest versions" from plugin or user preferences interfaces.
+Add and configure dcLatestVersionsLight from plugin or "user preferences" interfaces.
+You can add a dashboard item by enable it from your dashboard preferences.
+
+___
+
+# LISEZ MOI FR
+
+## QU'EST-CE QUE DCLATESTVERSIONSLIGHT ?
+
+"Dotclear's latest versions light" est un plugin pour 
+le moteur de blog open-source __Dotclear__.
+
+Simply show administrators last versions of nightly build of Dotclear.
+Il montre simplement les dernières "nightly" versions de Dotclear:
+_(stable, testings and unstable)_
+
+
+## NÉCESSAIRE
+
+ dcLatestVersionsLight demande: 
+
+  * que vous ayez la permission admin pour modifier user preferences
+  * Dotclear 2.16
+  * testé sous php 5.6.40
+
+## USAGE
+
+D'abord installer dcLatestVersionsLight, directement depuis un package zip.
+(Voir la documentation Dotclear pour savoir comment faire)
+
+Ajouter et configurer dcLatestVersionsLight depuis l'interface admin du plugin ou sous l'interface "préférences utilisateur".
+Vous pouvez ajouter l'item sur sur votre tableau de bord en l'activant depuis l'interface préférences utilisateur.
 You can add a dashboard item by enable it from your dashboard preferences.
 
 
-### admin dashboard
+### Admin dashboard view
 ![Screenshot](https://user-images.githubusercontent.com/62995223/90084038-86ddf900-dd14-11ea-85f7-e22417e300fb.jpg)
 
-### Index Interface
+### Plugin Interface
 ![Screenshot](https://user-images.githubusercontent.com/62995223/90084041-880f2600-dd14-11ea-8b90-9aa9f2cfad7d.jpg)
 
 ### User Preferences menu
 ![Screenshot](https://user-images.githubusercontent.com/62995223/90084042-88a7bc80-dd14-11ea-977d-d5104a8f7e5c.jpg)
-
-
-
