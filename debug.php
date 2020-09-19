@@ -16,6 +16,7 @@
  * 
  * define plugin' debug part:
 	- just give some tests
+	- see constant in install
  */
 /* dcLatestVersionsLight/debug.php */
 
