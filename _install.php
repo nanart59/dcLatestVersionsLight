@@ -15,11 +15,11 @@
  * @brief dcLatestVersionsLight, a plugin for Dotclear 2
  * 
  * define plugin' install:
-	- Dotclear version min 2.16 -- tested on
+	- Dotclear version min 2.15 -- tested on
 	- Php version min 5.6.40    -- also tested on 7.4.1
-	- module_id		    -- module title
+	- module_id		    		-- module title
 	- user prefs
-		. workspace 		-- workspace name
+		. workspace 	-- workspace name
 		. pref_show		-- user pref name
  */
 /* dcLatestVersionsLight/_install.php */
@@ -29,7 +29,7 @@ if (!defined('DC_CONTEXT_ADMIN')) {
 }
 
 #dc min version (tested)
-	$dc_min = '2.16';
+	$dc_min = '2.15';
 #php min version (tested)
 #@ignore
 	$php_min = '5.6.40';
@@ -52,7 +52,7 @@ if (version_compare($old_version, $new_version, '>=')) {
 }
 
 try {
-	# Check Dotclear version
+	# Check Dotclear version @ignore
 		if (!method_exists('dcUtils', 'versionsCompare') 
 		 || dcUtils::versionsCompare(DC_VERSION, $dc_min, '<', false)) {
 			throw new Exception(sprintf(
@@ -63,7 +63,7 @@ try {
 	# Set module user prefs
 		$core->auth->user_prefs->addWorkspace($module_id);
 		// Default prefs
-			$core->auth->user_prefs->$module_id->put($pref_prefix .$pref_show, false, 'boolean', 'Show Dotclear latest versions on dashboard.', false, true);
+			$core->auth->user_prefs->$module_id->put($pref_show, false, 'boolean', 'Show Dotclear latest versions on dashboard.', false, true);
 
 	#set module version
 		$core->setVersion($module_id, $new_version);
