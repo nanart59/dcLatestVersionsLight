@@ -20,13 +20,13 @@
 	- author(s): Nan'Art and contributors
 	- version: 1.0 -- model: new
 	- properties
-		. require (tested) Dc 2.16.x or >
+		. require (tested) Dc 2.15.x or >
 		. require (tested)php 5.6.40 7.4.1
 		- usage: content admin -- no widget
 		- setting: 
 			user pref favorite, class dcLatestVersionsLight
-		- support: 
-		- details: 
+		- support: https://forum.dotclear.org/viewtopic.php?id=49826
+		- details: https://plugins.dotaddict.org/dc2/details/dcLatestVersionsLight
  */
 /* dcLatestVersionsLight/_define.php */
 
@@ -42,10 +42,10 @@ $this->registerModule(
 	/* Author */
 	"Nan'Art and contributors",
 	/* Version */
-	'1.1',
+	'1.1.1',
 	/* Properties */
 	[
-		'requires'    => [['core', '2.16']],				// dotclear min version (tested)
+		'requires'    => [['core', '2.15']],				// dotclear min version (tested)
 		'permissions' => 'contentadmin',					// Permissions all admin dashboard user
 		'type' => 'plugin',									// type
 		'priority' => 		2000,							//priority
