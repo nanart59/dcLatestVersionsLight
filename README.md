@@ -14,7 +14,7 @@ _(stable, testings and unstable)_
  dcLatestVersionsLight requires: 
 
   * permissions to user admin preferences
-  * Dotclear 2.16
+  * Dotclear 2.15
   * tested on php 5.6.40
 
 ## USAGE
@@ -25,7 +25,7 @@ __(See Dotclear's documentation to know how do this)__
 Add and configure dcLatestVersionsLight from plugin or "user preferences" interfaces.
 You can add a dashboard item by enable it from your dashboard preferences.
 
-___
+---
 
 # LISEZ MOI FR
 
@@ -44,7 +44,7 @@ _(stable, testings and unstable)_
  dcLatestVersionsLight demande: 
 
   * que vous ayez la permission admin pour modifier user preferences
-  * Dotclear 2.16
+  * Dotclear 2.15
   * testé sous php 5.6.40
 
 ## USAGE
@@ -56,7 +56,8 @@ Ajouter et configurer dcLatestVersionsLight depuis l'interface admin du plugin o
 Vous pouvez ajouter l'item sur sur votre tableau de bord en l'activant depuis l'interface préférences utilisateur.
 You can add a dashboard item by enable it from your dashboard preferences.
 
----
+----
+
 ### Admin dashboard view
 ![Screenshot](https://user-images.githubusercontent.com/62995223/90084038-86ddf900-dd14-11ea-85f7-e22417e300fb.jpg)
 
