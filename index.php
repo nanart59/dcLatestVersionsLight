@@ -27,7 +27,7 @@ if (!defined('DC_CONTEXT_ADMIN')) {return;}
 //*/
 
 #dc min version (tested)
-	$dc_min = '2.16';
+	$dc_min = '2.15';
 #php min version (tested)
 #@ignore
 	$php_min = '5.6.40'; //also tested on 7.4x
