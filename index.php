@@ -27,7 +27,7 @@ if (!defined('DC_CONTEXT_ADMIN')) {return;}
 //*/
 
 #dc min version (tested)
-	$dc_min = '2.15';
+	$dc_best = '2.15';
 #php min version (tested)
 #@ignore
 	$php_min = '5.6.40'; //also tested on 7.4x
@@ -59,33 +59,43 @@ if (!defined('DC_CONTEXT_ADMIN')) {return;}
 #versions types
 $version_types	= 'stable,unstable,testing,sexy';
 
+#tab
+$tab  = empty($_REQUEST['tab']) ? '' : $_REQUEST['tab'];
+
 ?>
 <html>
 <head>
 	<title><?php echo $module_id; ?></title>
-	<!-- #onglets -->
-	<?php echo dcPage::jsPageTabs($default_tab); ?>
+	<!-- onglets -->
+	<?php 
+	
+	echo dcPage::jsPageTabs($tab); 
+	?>
 </head>
 <body>
  <?php
 # menu
-	echo dcPage::breadcrumb(
-		[
-			html::escapeHTML($core->blog->name) => '',
-			$module_id						=> ''
-		]);
+    echo dcPage::breadcrumb(
+        array(
+            __('Plugins')     => '',
+            __($module_id) => ''
+        )
+    );
 # messages
 	echo dcPage::notices();
 ?>
 
+    <div class="fieldset">
 	<p class="as_h3"><?php echo $index_comment; ?></p>
 	<p class="as_h4"><?php printf(__("your current %s status is '<i>%s</i>'"), __('preferences about dotclear updates'), $show_on); ?></p>
 	<p class="info">
 		<?php 
+		#add '.dcLatestVersionsLight' to link id version >= 2.15
+				$id = version_compare($dc_best, DC_VERSION, '>=') ?'' :'.dcLatestVersionsLight';
 			echo sprintf(
 					__('You can change this options in your %s %s.'),
 					'<a href="' . $core->adminurl->get('admin.user.preferences') 
-								. '#user-favorites.dcLatestVersionsLight">' 
+								. '#user-favorites' .$id .'">' 
 								. __('Preferences on Dashboard') . '</a>',
 					'<br><i>' .__('also see below.') .'</i>'
 						);
@@ -99,9 +109,10 @@ if(defined('PLUG_DEBUG') && PLUG_DEBUG) {
 			require_once $file;
 		}
 }//if PLUG_DEBUG
-
+echo '</div>';
 /* help */
 dcPage::helpBlock('dcLatestVersionsLight');
 ?>
+
 </body>
 </html>
