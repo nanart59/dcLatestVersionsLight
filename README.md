@@ -14,7 +14,7 @@ _(stable, testings and unstable)_
  dcLatestVersionsLight requires: 
 
   * permissions to user admin preferences
-  * Dotclear 2.15
+  * Dotclear 2.9
   * tested on php 5.6.40
 
 ## USAGE
@@ -44,7 +44,7 @@ _(stable, testings and unstable)_
  dcLatestVersionsLight demande: 
 
   * que vous ayez la permission admin pour modifier user preferences
-  * Dotclear 2.15
+  * Dotclear 2.9
   * testé sous php 5.6.40
 
 ## USAGE
