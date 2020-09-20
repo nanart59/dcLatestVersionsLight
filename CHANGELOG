@@ -1,4 +1,8 @@
 dcLatestVersionsLight :
+1.12 - Nan'Art
+tested on Dotclear 2.9
+debug /help/help.html
+change defined & install to change version needed
 1.11 - Nan'Art
 tested on Dotclear 2.15
 add end lines in en/help/help.html
