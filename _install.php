@@ -15,7 +15,7 @@
  * @brief dcLatestVersionsLight, a plugin for Dotclear 2
  * 
  * define plugin' install:
-	- Dotclear version min 2.15 -- tested on
+	- Dotclear version min 2.9 -- tested on
 	- Php version min 5.6.40    -- also tested on 7.4.1
 	- module_id		    		-- module title
 	- user prefs
@@ -29,7 +29,7 @@ if (!defined('DC_CONTEXT_ADMIN')) {
 }
 
 #dc min version (tested)
-	$dc_min = '2.15';
+	$dc_min = '2.9';
 #php min version (tested)
 #@ignore
 	$php_min = '5.6.40';
