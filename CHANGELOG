@@ -3,6 +3,8 @@ dcLatestVersionsLight :
 tested on Dotclear 2.9
 debug /help/help.html
 change defined & install to change version needed
+tested on php 5.6.40
+note: php 7.x is ok for Dotclear version => 2.14
 1.11 - Nan'Art
 tested on Dotclear 2.15
 add end lines in en/help/help.html
