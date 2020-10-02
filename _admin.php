@@ -55,7 +55,7 @@ class dcLatestVersionsLightAdmin
 {
 	public static	$module_id		= 'dcLatestVersionsLight';
 	public static 	$workspace		= 'dcLatestVersionsLight';
-	public static	$pref_show		= 'dclv_show_on_dashboard';
+	public static	$pref_show		= 'dcLatestVersionsLightItems';
 	public static	$version_types	= 'stable,unstable,testing,sexy'; //sexy ignore?
 	public static	$versions_cache	= '/versions';
 
@@ -87,22 +87,29 @@ class dcLatestVersionsLightAdmin
 	 */
 	public static function adminDashboardOptionsForm($core)
 	{
-		$workspace		=	self::$workspace;
-		$core->auth->user_prefs->addWorkspace($workspace);
+		$show		= 	self::$pref_show;
+		$workspace	=	self::$workspace;
+		#is preference
+			if (!$core->auth->user_prefs->dashboard->prefExists($show)) {
+				$core->auth->user_prefs->dashboard->put(
+					$show,
+					false,
+					'boolean'
+				);
+			}
+		#user pref
+			$show_value = $core->auth->user_prefs->dashboard->get($show);
 
-		#show on dashboard
-			$show		= 	self::$pref_show;
-			$show_value = $core->auth->user_prefs->$workspace->$show;
-
-		//some plugin infos
-		#plugin name
-			$p_name = self::$module_id;
-		#plugin version
-			$p_version = $core->plugins->moduleInfo($p_name, 'version');
+		#some plugin infos
+			#plugin name
+				$p_name = self::$module_id;
+			#plugin version
+				$p_version = $core->plugins->moduleInfo($p_name, 'version');
+			#plugin message
+				$p_message = sprintf(__('%s - %s'), __($p_name), $p_version);
 
 		echo '<div class="fieldset" id="' .$workspace .'">';
-		echo '<h4>' . __('Dotclear latests versions  - light') .'</h4>';
-		// echo '<p>'  .' <i>(v. light:' .$p_version .')</i>'.'</p>';
+		echo '<h4>' . $p_message .'</h4>';
 		echo '<p>';
 			echo '<label for="' .$show .'" class="classic">';
 				echo form::checkbox($show, 1, $show_value);
@@ -121,22 +128,14 @@ class dcLatestVersionsLightAdmin
 	{
 		Global $core;
 
-		$workspace		=	self::$workspace;
-		$core->auth->user_prefs->addWorkspace($workspace);
-
-		#show on dashboard
-			$show		= 	self::$pref_show;
-			$show_value = $core->auth->user_prefs->$workspace->$show;
-		
-
+		$show		= 	self::$pref_show;
 		# Get and store user's prefs for plugin options 
         try {
             // Hosting monitor options
-            $core->auth->user_prefs->$workspace->put($show, !empty($_POST[$show]), 'boolean');
+            $core->auth->user_prefs->dashboard->put($show, !empty($_POST[$show]), 'boolean');
         } catch (Exception $e) {
             $core->error->add($e->getMessage());
         }
-
 	}//adminAfterDashboardOptionsUpdate
 
 	/**
@@ -148,23 +147,23 @@ class dcLatestVersionsLightAdmin
 	public static function adminDashboardItems($core, $items)
 	{
 		#user pref
-			$workspace	=	self::$workspace;
-			$core->auth->user_prefs->addWorkspace($workspace);
 			$show		= 	self::$pref_show;
 		#don't show on dashboard
-			if (!$core->auth->user_prefs->$workspace->$show) { return; }
+			if (!$core->auth->user_prefs->dashboard->get($show)) { return; }
 
 		#get version types
 			$builds = self::$version_types;
 			$builds = explode(',', $builds);
 		
-		#get path cahe/verions
+		#get path cache/verions
 			$path = self::$versions_cache;
 		#module id
 			$module_id = self::$module_id;
 
 		#compose
-			$text = __('<li><a href="%u" title="Download Dotclear %v">%r</a> : %v</li>');
+			$title		= "%r";
+			$version	= sprintf(__('Dotclear %s'), "%v");
+			$text		= '<li><a href="%u" title="' .$title .'">%r</a> : ' .$version .'</li>';
 			$li = array();
 
 		foreach($builds as $build) {
@@ -192,7 +191,7 @@ class dcLatestVersionsLightAdmin
 					'%u'
 				),
 				array(
-					$build,
+					__('Download version ') .$build,
 					$updater->getVersion(),
 					$updater->getFileURL()
 				),
