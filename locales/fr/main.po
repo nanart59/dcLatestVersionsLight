@@ -1,6 +1,6 @@
 # Language: Français
-# Module: dcLatestVersionsLight - 0.1
-# Date: 2020-08-12 23:11:59
+# Module: dcLatestVersionsLight - 1.13
+# Date: 2020-10-2 23:11:59
 # Translated with translater 2018.10.26
 
 msgid ""
@@ -128,4 +128,3 @@ msgstr "Préférences sur le tableau de bord"
 #: index.php:90
 msgid "also see below."
 msgstr "voir aussi ci-dessous"
-
