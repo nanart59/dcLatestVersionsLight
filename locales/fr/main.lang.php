@@ -1,7 +1,7 @@
 <?php
 // Language: Français 
-// Module: dcLatestVersionsLight - 0.1
-// Date: 2020-08-12 23:11:59 
+// Module: dcLatestVersionsLight - 1.13
+// Date: 2020-10-02 23:11:59 
 // Translated with dcTranslater - 2018.10.26 
 
 #_admin.php:35
