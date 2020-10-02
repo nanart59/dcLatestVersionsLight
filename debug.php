@@ -37,7 +37,7 @@ if(!defined('PLUG_DEBUG') || !PLUG_DEBUG) { return; }
 		#builds
 			echo printR($builds, 'versions types');
 		#compose
-			$text = __('<li><a href="%u" title="Download Dotclear version %v">%r</a> : %v</li>');
+			$text = '<li><a href="%u" title="Download Dotclear version %v"> %r </a> : %v</li>';
 			$li = array();
 		#no versions ?
 			$cache_versions = DC_TPL_CACHE.'/versions';
@@ -126,7 +126,7 @@ function printR($value, $title ='') {
 		#message
 			$message = '';
 			$message .= "<b>$title</b>";
-			$message .= ' -- ' .__('from') .': ' .$call['file'] .'|' .$call['line'];
+			$message .= ' -- ' .__('from') .': ' .$call['file'] .' | ' .$call['line'] .' ';
 			$message = '<hr>' .'<p class="as_h4" id="' .$call['line'] .'">' .$message;
 			$message .= print_r($value, true);
 			$message .= '<hr>';
