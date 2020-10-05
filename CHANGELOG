@@ -1,25 +1,119 @@
-dcLatestVersionsLight :
-1.13 - Nan'Art
-Change user preferences mode in _admin.php to work with Dotclear dashboard put & get
-1.12 - Nan'Art
-tested on Dotclear 2.9
-debug /help/help.html
-change defined & install to change version needed
+Change log
+**********
+# Changelog
+All notable changes to this project will be documented in this file.
+
+## information: this module work on:
+	### Dotclear 2.9
+		#### Dotclear versions & php versions see forum -> "Versions Dotclear & versions php", https://forum.dotclear.org/viewtopic.php?pid=344999
+	### php versions :
+		#### php 5.6.40
+		#### php 7.3.5
+	### Dotclear upload & information: https://plugins.dotaddict.org/dc2/details/dcLatestVersionsLight
+	### Dotclear support (fr): https://forum.dotclear.org/viewtopic.php?id=49826
+	### Github upload & support: https://github.com/nanart59/dcLatestVersionsLight
+
+## [Unreleased]
+		- change workspace name in _defined.php
+		- change workspace & pref item names in defined, install & _admin php files
+		- get old values pref item: _install.php
+		- delete old workspace and pref item: _install.php
+		- set news workspace and pref item: _install.php
+		- fixed install file bug user pref item
+		- verify if unused files in lang dir are deleted with new version
+		
+## this module dcLatestVersionsLight
+====================================
+
+
+## [1.13] - 2020/10/02
+	### Change user preferences mode in _admin.php to work with Dotclear dashboard put & get
+	### Change
+		#### debug.php
+			- no traduction for lines like __('<li><...
+		#### _admin.php
+			change variable $pref_show : 'dclv_show_on_dashboard' to 'dcLatestVersionsLightItems'
+			change all references at $workspace to dashboard
+			change return echo: add plugin name & version
+			modify result in function adminDashboardItems (text show in dashboard)
+		#### langs
+			- ligt modify in translations help files
+
 1.11 - Nan'Art
 tested on Dotclear 2.15
 add end lines in en/help/help.html
 tested on dotclear version 
 	change defined & install to change version needed
-1.1 - Nan'Art
-* add help files
-0.1 - Nan'Art
-* version "light"
-* corrections _admin.php
-* ajout index.php -- show url vers user pref
-* suppression widget
-* suppression setting
 
-dcLatestVersions :
+
+
+## [1.12] - 2020-09-20
+	### changed
+		#### tested on Dotclear 2.9
+		#### _define;pfp
+			- 'requires' 'core', '2.9' //tested on
+		#### _install.php
+			- $dc_min = '2.15'
+		#### index.php
+			- $dc_min = '2.15'
+			- <head>: dcPage::jsPageTabs($default_tab) to dcPage::jsPageTabs($tab)
+			- dcPage::breadcrumb
+
+## [1.1.1] - 2020-09-20
+	### Added
+		#### _defined.php 
+			- url support & details
+	### Changed
+		#### _defined.pphp
+			- 'requires': 'core', '2.15'
+	### Fixed
+		#### _install.php
+			- name pref iem $pref_prefix .$pref_show to $pref_show
+	### removed
+		- files aboutlanguages.txt
+## [1.1] - 2020-09-17
+	### Added
+		#### help files (fr & en)
+		#### constant & debug files
+		#### small icon
+	### Changed
+		#### _admin.php
+			- behavior dcLatestVersionsLightAdmin
+
+## [0.1] - Nan'Art - 2020-09 not published
+	### Added
+		#### index.php
+			- show link to user pref dashboard
+			* Variables
+				- dc min version 2.16 (restriction)
+				-- php min version 5.6.40 (information)
+				- module_id: 'dcLatestVersionsLight';
+				- workspace: 'dcLatestVersionsLight';
+				- preference item: 'dclv_show_on_dashboard';
+				- module_setting = array -- 'versions_type', "List of Dotclear's builds", 'stable,unstable,testing,sexy', 'string'
+		#### _defined.php : 
+			* 'requires': [['core', '2.16']]
+			* 'priority': 2000
+			* 'settings': 'pref' => '#user-favorites.dcLatestVersionsLight'
+		#### _install.php
+			* Variables
+				- dc min version 2.16 (restriction)
+				-- php min version 5.6.40 (information)
+				- module_id: 'dcLatestVersionsLight';
+				- workspace: 'dcLatestVersionsLight';
+				- preference item: 'dclv_show_on_dashboard';
+	### Changed
+		- rename to version "light": dcLatestVersionsLight
+		- fr translations
+		- icons
+	### Removed
+		- no more widget
+		- no more settings
+	### fixed
+		- _admin.php, boucle foreach (return; to continue;)
+
+## report changelogs in old module dcLatestVersions
+===================================================
 2015-03-11 - Pierre Van Glabeke
 * ajout mode hors ligne et codage titre widget (widget)
 * encodage UNIX (LF)
