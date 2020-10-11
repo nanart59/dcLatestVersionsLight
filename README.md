@@ -15,7 +15,12 @@ _(stable, testings and unstable)_
 
   * permissions to user admin preferences
   * Dotclear 2.9
-  * tested on php 5.6.40 and php 7.3.5
+  * tested on php 5.6.40
+
+ Dotclear versions requires:
+  * Dotclear 2.9 to 2.13: php 5.6.40
+  * Dotclear 2.14 to 2.15: php 7.3.5
+  * Dotclear 2.16+: php 7.4.1
 
 ## USAGE
 
@@ -45,7 +50,12 @@ _(stable, testings and unstable)_
 
   * que vous ayez la permission admin pour modifier user preferences
   * Dotclear 2.9
-  * testé sous php 5.6.40 et php 7.3.5
+  * testé sous php 5.6.40
+
+ Dotclear versions demande:
+  * Dotclear 2.9 to 2.13: php 5.6.40
+  * Dotclear 2.14 to 2.15: php 7.3.5
+  * Dotclear 2.16+: php 7.4.1
 
 ## USAGE
 
@@ -57,15 +67,7 @@ Vous pouvez ajouter l'item sur sur votre tableau de bord en l'activant depuis l'
 You can add a dashboard item by enable it from your dashboard preferences.
 
 ----
-# about Dotclear and php
-## information: this module work on:
-### Dotclear 2.9
-#### Dotclear versions & php versions see forum -> "Versions Dotclear & versions php", https://forum.dotclear.org/viewtopic.php?pid=344999
-### Dotclear upload & information: https://plugins.dotaddict.org/dc2/details/dcLatestVersionsLight
-### Dotclear support (fr): https://forum.dotclear.org/viewtopic.php?id=49826
 
-----
-## screen captures
 ### Admin dashboard view
 ![Screenshot](https://user-images.githubusercontent.com/62995223/90084038-86ddf900-dd14-11ea-85f7-e22417e300fb.jpg)
 
