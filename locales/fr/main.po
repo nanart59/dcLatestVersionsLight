@@ -1,14 +1,14 @@
 # Language: Français
 # Module: dcLatestVersionsLight - 1.13
-# Date: 2020-10-02 19:21:17
+# Date: 2020-10-11 16:24:56
 # Translated with translater 2018.10.26
 
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
-"Project-Id-Version: dcLatestVersionsLight 1.12\n"
+"Project-Id-Version: dcLatestVersionsLight 1.13\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2020-10-02T19:21:17+00:00\n"
+"PO-Revision-Date: 2020-10-11T16:24:56+00:00\n"
 "Last-Translator: nanart\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -31,11 +31,11 @@ msgstr "Dotclear dernières versions Light"
 msgid "Show Dotclear's latest versions on dashboard."
 msgstr "Montrer les dernières versions sur le tableau de bord"
 
-#: _admin.php:194
+#: _admin.php:195
 msgid "Download version"
 msgstr "Télécharger la version"
 
-#: _admin.php:214
+#: _admin.php:215
 msgid "Dotclear latests versions - light"
 msgstr "Dotclear dernières versions Light"
 
@@ -77,48 +77,53 @@ msgid "Dotclear's latest versions"
 msgstr "Dernières versions Dotclear"
 
 #: debug.php:107
-msgid "what should be displayed"
-msgstr "ce qui devrait être affiché"
+msgid "what should be nearly displayed on dashboard"
+msgstr "Ce qui devrait approximativement être affiché sur le tableau de bord"
 
 #: debug.php:129
 msgid "from"
 msgstr "de"
 
-#: index.php:51
+#: index.php:54
 msgid "Plugin informations"
 msgstr "Informations plugin"
 
-#: index.php:52
+#: index.php:55
 msgid "plugin %s information"
 msgstr "informationsplugin %s"
 
-#: index.php:57
+#: index.php:60
 msgid "show on dashboard."
 msgstr "montrer sur le tableau de bord"
 
-#: index.php:57
+#: index.php:60
 msgid "not display on dashboard."
 msgstr "ne pas afficher sur le tableau de bord"
 
-#: index.php:90
-msgid "your current %s status is '<i>%s</i>'"
-msgstr "Vos %s sont '<i>%s</i>'"
+#: index.php:93
+msgid "your current %s status is '<strong>%s</strong>'"
+msgstr "Votre statut actuel %s est '<strong>%s</strong>'"
 
-#: index.php:90
+#: index.php:93
 msgid "preferences about dotclear updates"
 msgstr "préférences à propos des mises à jour de Dotclear"
 
-#: index.php:96
+#: index.php:99
 msgid "You can change this options in your %s %s."
 msgstr "Vous pouvez modifier ces options dans vos %s %s."
 
-#: index.php:99
+#: index.php:102
 msgid "Preferences on Dashboard"
 msgstr "Préférences sur le tableau de bord"
 
-#: index.php:100
-msgid "also see below."
-msgstr "voir aussi ci-dessous"
+#: index.php:103
+msgid "also see below: "
+msgstr "voir aussi plus bas: "
 
-msgid "Dotclear latests versions  - light"
-msgstr "Dotclear dernières versions Light"
+#: index.php:110
+msgid "Your Dotclear version is %s - %s."
+msgstr "Votre version Dotclear :  %s - %s."
+
+#: index.php:112
+msgid "Your php version is %s."
+msgstr "Votre version php : %s."
