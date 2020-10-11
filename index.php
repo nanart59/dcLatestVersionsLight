@@ -26,15 +26,18 @@ if (!defined('DC_CONTEXT_ADMIN')) {return;}
 	define("PLUG_DEBUG", true);
 //*/
 
-#dc min version (tested)
-	$dc_best = '2.15';
-#php min version (tested)
-#@ignore
-	$php_min = '5.6.40'; //also tested on 7.4x
+#@ignore information about Dotclear & php versions
+	#dc min version (tested)
+		$dc_best = '2.15';	//php 7.3.5
+		// $dc_best = '2.16';	//php 7.4.1
+	#php min version (tested)
+		$php_min = '5.6.40';	//dc version 2.9 to 2.13
+		$php_min = '7.3.5';		//dc version 2.14 to 2.15
+		$php_min = '7.4.1'; 	//dc version 2.16+
 
 /*------please, dont change bellow---------*/
 #module id
-	$module_id = 'dcLatestVersionsLight';
+	$module_id = dcLatestVersionsLightAdmin::$module_id; //dcLatestVersionsLight
 #module_setting
 	$module_setting = [
 		[	'versions_type',
@@ -44,8 +47,8 @@ if (!defined('DC_CONTEXT_ADMIN')) {return;}
 		]
 	];
 #user prefs
-	$workspace		= 'dcLatestVersionsLight';
-	$pref_show		= 'dclv_show_on_dashboard';
+	$workspace		= dcLatestVersionsLightAdmin::$workspace; //'dcLatestVersionsLight';
+	$pref_show		= dcLatestVersionsLightAdmin::$pref_show; //'dclv_show_on_dashboard';
 
 #page
 	$index_title 	= __('Plugin informations');
@@ -57,7 +60,7 @@ if (!defined('DC_CONTEXT_ADMIN')) {return;}
 		$show_on 	= $show ?__('show on dashboard.') :__('not display on dashboard.');
 
 #versions types
-$version_types	= 'stable,unstable,testing,sexy';
+$version_types	= dcLatestVersionsLightAdmin::$version_types; //'stable,unstable,testing,sexy';
 
 #tab
 $tab  = empty($_REQUEST['tab']) ? '' : $_REQUEST['tab'];
@@ -87,7 +90,7 @@ $tab  = empty($_REQUEST['tab']) ? '' : $_REQUEST['tab'];
 
     <div class="fieldset">
 	<p class="as_h3"><?php echo $index_comment; ?></p>
-	<p class="as_h4"><?php printf(__("your current %s status is '<i>%s</i>'"), __('preferences about dotclear updates'), $show_on); ?></p>
+	<p class="as_h4"><?php printf(__("your current %s status is '<strong>%s</strong>'"), __('preferences about dotclear updates'), $show_on); ?></p>
 	<p class="info">
 		<?php 
 		#add '.dcLatestVersionsLight' to link id version >= 2.15
@@ -97,10 +100,20 @@ $tab  = empty($_REQUEST['tab']) ? '' : $_REQUEST['tab'];
 					'<a href="' . $core->adminurl->get('admin.user.preferences') 
 								. '#user-favorites' .$id .'">' 
 								. __('Preferences on Dashboard') . '</a>',
-					'<br><i>' .__('also see below.') .'</i>'
+					'<br><i>' .__('also see below: '). __('Plugin settings (in blog parameters)') .'</i>'
 						);
 		?>
 	</p>
+	<hr/>
+	<p class="info">
+		<?php
+			$versions		= sprintf(__('Your Dotclear version is %s - %s.'),DC_VERSION,  DC_UPDATE_VERSION );
+			$versions		.= ' | ';
+			$versions		.= sprintf(__('Your php version is %s.'),phpversion() );
+			echo $versions;
+		?>
+	<p>
+
 <?php
 /* just if PLUG_DEBUG */
 if(defined('PLUG_DEBUG') && PLUG_DEBUG) {
