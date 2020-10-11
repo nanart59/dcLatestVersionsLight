@@ -103,8 +103,8 @@ if($li) {
 		'<h3>' .'<img src="' . dcPage::getPF("$module_id/icon-small.png") . '" alt="" /> ' .html::escapeHTML(__("Dotclear's latest versions")).'</h3>'.
 		'<ul>'.implode('', $li).'</ul>'.
 		'</div>';
-}
-	if(isset($items)) { echo printR($items[0], __('what should be displayed')); }
+}//if li
+	if(isset($items)) { echo printR($items[0], __('what should be nearly displayed on dashboard')); }
 
 
 	/**
