@@ -11,17 +11,6 @@
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 #
 # -- END LICENSE BLOCK ------------------------------------
-/**
- * @brief dcLatestVersionsLight, a plugin for Dotclear 2
- * 
- * define plugin' install:
-	- Dotclear version min 2.9 -- tested on
-	- Php version min 5.6.40    -- also tested on 7.4.1
-	- module_id		    		-- module title
-	- user prefs
-		. workspace 	-- workspace name
-		. pref_show		-- user pref name
- */
 /* dcLatestVersionsLight/_install.php */
 
 if (!defined('DC_CONTEXT_ADMIN')) {
@@ -59,11 +48,28 @@ try {
 				'%s requires Dotclear %s', $module_id, $dc_min
 			));
 		}
-
-	# Set module user prefs
-		$core->auth->user_prefs->addWorkspace($module_id);
-		// Default prefs
-			$core->auth->user_prefs->$module_id->put($pref_show, false, 'boolean', 'Show Dotclear latest versions on dashboard.', false, true);
+	# set ws & user pref if not defined
+		if (!$core->auth->user_prefs->$workspace->prefExists($pref_show)) {
+			$core->auth->user_prefs->$workspace->put(
+				$pref_show,
+				false,
+				'boolean',
+				'Show Dotclear latest versions on dashboard.'
+			);
+		}
+	#get old user prefs
+		$old_pref = $core->auth->user_prefs->dashboard->prefExists('dcLatestVersionsLightItems') 
+			? $core->auth->user_prefs->dashboard->get('dcLatestVersionsLightItems')
+			: null;
+	#get last user prefs
+		$new_pref = $core->auth->user_prefs->$workspace->get($pref_show);
+	#set/keep pref -- if dcLatestVersionsLightItems or dclv_show_on_dashboard
+		$user_pref = ($old_pref || $new_pref) ?true :false;
+		$core->auth->user_prefs->dashboard->put($pref_show, $user_pref, 'boolean', 'Show Dotclear latest versions on dashboard.');
+	#del obsolete user prefs
+		# suppression de la préférence
+			$core->auth->user_prefs->dashboard->drop('dcLatestVersionsLightItems');
+			$core->auth->user_prefs->dashboard->drop($pref_show);
 
 	#set module version
 		$core->setVersion($module_id, $new_version);
