@@ -11,17 +11,6 @@
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 #
 # -- END LICENSE BLOCK ------------------------------------
-/**
- * @brief dcLatestVersionsLight, a plugin for Dotclear 2
- * 
- * define plugin' admin:
-	- menu
-	- behaviors
-		. adminDashboardFavorites @ignore?
-		. adminDashboardOptionsForm				-- form on user pref dashboard
-		. adminAfterDashboardOptionsUpdate		-- update after form user pref
-		. adminDashboardItems					-- show on dashboard construct
- */
 /* dcLatestVersionsLight/_admin.php */
 
 if (!defined('DC_RC_PATH')) { return; }
@@ -55,7 +44,7 @@ class dcLatestVersionsLightAdmin
 {
 	public static	$module_id		= 'dcLatestVersionsLight';
 	public static 	$workspace		= 'dcLatestVersionsLight';
-	public static	$pref_show		= 'dcLatestVersionsLightItems';
+	public static	$pref_show		= 'dclv_show_on_dashboard';
 	public static	$version_types	= 'stable,unstable,testing,sexy'; //sexy ignore?
 	public static	$versions_cache	= '/versions';
 
@@ -90,15 +79,15 @@ class dcLatestVersionsLightAdmin
 		$show		= 	self::$pref_show;
 		$workspace	=	self::$workspace;
 		#is preference
-			if (!$core->auth->user_prefs->dashboard->prefExists($show)) {
-				$core->auth->user_prefs->dashboard->put(
+			if (!$core->auth->user_prefs->$workspace->prefExists($show)) {
+				$core->auth->user_prefs->$workspace->put(
 					$show,
 					false,
 					'boolean'
 				);
 			}
 		#user pref
-			$show_value = $core->auth->user_prefs->dashboard->get($show);
+			$show_value = $core->auth->user_prefs->$workspace->get($show);
 
 		#some plugin infos
 			#plugin name
@@ -129,10 +118,11 @@ class dcLatestVersionsLightAdmin
 		Global $core;
 
 		$show		= 	self::$pref_show;
+		$workspace	=	self::$workspace;
 		# Get and store user's prefs for plugin options 
         try {
             // Hosting monitor options
-            $core->auth->user_prefs->dashboard->put($show, !empty($_POST[$show]), 'boolean');
+            $core->auth->user_prefs->$workspace->put($show, !empty($_POST[$show]), 'boolean');
         } catch (Exception $e) {
             $core->error->add($e->getMessage());
         }
@@ -146,10 +136,10 @@ class dcLatestVersionsLightAdmin
 	 */
 	public static function adminDashboardItems($core, $items)
 	{
-		#user pref
-			$show		= 	self::$pref_show;
+		$show		= 	self::$pref_show;
+		$workspace	=	self::$workspace;
 		#don't show on dashboard
-			if (!$core->auth->user_prefs->dashboard->get($show)) { return; }
+			if (!$core->auth->user_prefs->$workspace->get($show)) { return; }
 
 		#get version types
 			$builds = self::$version_types;
