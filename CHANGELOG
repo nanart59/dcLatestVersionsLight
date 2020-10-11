@@ -4,9 +4,9 @@ Change log
 All notable changes to this project will be documented in this file.
 
 ## information: this module work on:
-	### Dotclear 2.9
+	### Dotclear 2.9+ tests
 		#### Dotclear versions & php versions see forum -> "Versions Dotclear & versions php", https://forum.dotclear.org/viewtopic.php?pid=344999
-	### php versions :
+	### php versions tests :
 		#### php 5.6.40
 		#### php 7.3.5
 	### Dotclear upload & information: https://plugins.dotaddict.org/dc2/details/dcLatestVersionsLight
@@ -14,20 +14,23 @@ All notable changes to this project will be documented in this file.
 	### Github upload & support: https://github.com/nanart59/dcLatestVersionsLight
 
 ## [Unreleased]
-		- change workspace name in _defined.php
-		- change workspace & pref item names in defined, install & _admin php files
-		- get old values pref item: _install.php
-		- delete old workspace and pref item: _install.php
-		- set news workspace and pref item: _install.php
-		- fixed install file bug user pref item
 		- verify if unused files in lang dir are deleted with new version
 		
 ## this module dcLatestVersionsLight
 ====================================
-
+## [1.14] - 2020/10/15
+	### Change 
+		#### admin.php:		workspace 'dashboard' to old name : dcLatestVersionsLight ---- like in _define.php since version 1.1
+		#### install.php:	user pref dclv_show_on_dashboard  ----  like in _admin.php since version 1.1 to version 1.12
+		#### install.php, admin.php: user pref dcLatestVersionsLightItems to dclv_show_on_dashboard   ----  like in _admin.php since version 1.1 to version 1.12
+		#### debug.php to reflect show result
+	### Delete
+		#### install.php:	user pref dashboard->dcLatestVersionsLightItems, after get old value
+		#### install.php:	user pref dashboard->dclv_show_on_dashboard
 
 ## [1.13] - 2020/10/02
 	### Change user preferences mode in _admin.php to work with Dotclear dashboard put & get
+		- worspace = dashboard
 	### Change
 		#### debug.php
 			- no traduction for lines like __('<li><...
@@ -39,25 +42,21 @@ All notable changes to this project will be documented in this file.
 		#### langs
 			- ligt modify in translations help files
 
-1.11 - Nan'Art
-tested on Dotclear 2.15
-add end lines in en/help/help.html
-tested on dotclear version 
-	change defined & install to change version needed
-
-
-
 ## [1.12] - 2020-09-20
 	### changed
-		#### tested on Dotclear 2.9
-		#### _define;pfp
-			- 'requires' 'core', '2.9' //tested on
+		#### tested on Dotclear 2.9, 2.10, 2.11, 2.12 & 2.13 with php 5.6.40 needed, no php 7.x
+		#### tested on Dotclear 2.14 & 2.15 with php 7.3.5 needed, no php 7.4.x
+		#### tested on Dotclear >= 2.16 & 2.17 with php 7.4.1
+		#### _define.php
+			- 'requires' 'core', '2.9' //tested on with php 5.6.40
 		#### _install.php
 			- $dc_min = '2.15'
 		#### index.php
 			- $dc_min = '2.15'
 			- <head>: dcPage::jsPageTabs($default_tab) to dcPage::jsPageTabs($tab)
 			- dcPage::breadcrumb
+	###
+		#### add end lines in en/help/help.html
 
 ## [1.1.1] - 2020-09-20
 	### Added
@@ -71,6 +70,7 @@ tested on dotclear version
 			- name pref iem $pref_prefix .$pref_show to $pref_show
 	### removed
 		- files aboutlanguages.txt
+
 ## [1.1] - 2020-09-17
 	### Added
 		#### help files (fr & en)
