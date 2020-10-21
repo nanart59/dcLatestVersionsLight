@@ -14,8 +14,10 @@ All notable changes to this project will be documented in this file.
 	### Github upload & support: https://github.com/nanart59/dcLatestVersionsLight
 
 ## [Unreleased]
-		- verify if unused files in lang dir are deleted with new version
-		
+	### plugin activate: preferences and/or setting ?
+	    #### by preverences: the action is taken into account for the user
+	    #### by setting: the action is taken into account for the blog
+
 ## this module dcLatestVersionsLight
 ====================================
 ## [1.14] - 2020/10/15
