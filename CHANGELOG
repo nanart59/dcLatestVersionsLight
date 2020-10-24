@@ -14,9 +14,9 @@ All notable changes to this project will be documented in this file.
 	### Github upload & support: https://github.com/nanart59/dcLatestVersionsLight
 
 ## [Unreleased]
-	### plugin activate: preferences and/or setting ?
-	    #### by preverences: the action is taken into account for the user
-	    #### by setting: the action is taken into account for the blog
+	### show on dashboard
+		#### version stable: link to https://fr.dotclear.org/
+		#### versions testing & unstable: publication date
 
 ## this module dcLatestVersionsLight
 ====================================
