@@ -17,6 +17,8 @@ All notable changes to this project will be documented in this file.
 	### show on dashboard
 		#### version stable: link to https://fr.dotclear.org/
 		#### versions testing & unstable: publication date
+	### Dotclear version
+		### Dotclear version 2.19 need php >= 7
 
 ## this module dcLatestVersionsLight
 ====================================
