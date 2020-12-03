@@ -25,7 +25,7 @@ $this->registerModule(
 	/* Author */
 	"Nan'Art and contributors",
 	/* Version */
-	'1.14',
+	'1.15',
 	/* Properties */
 	[
 		'requires'    => [['core', '2.9']],				// dotclear min version (tested)
