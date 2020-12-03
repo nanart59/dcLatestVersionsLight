@@ -1,41 +1,52 @@
 # Language: Français
-# Module: dcLatestVersionsLight - 1.13
-# Date: 2020-10-11 16:24:56
-# Translated with translater 2018.10.26
+# Module: dcLatestVersionsLight - 1.15
+# Date: 2020-12-03 16:24:24
+# Translated with translater 2013.05.11
 
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
-"Project-Id-Version: dcLatestVersionsLight 1.13\n"
+"Project-Id-Version: dcLatestVersionsLight 1.14\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2020-10-11T16:24:56+00:00\n"
+"PO-Revision-Date: 2020-12-03T16:24:24+00:00\n"
 "Last-Translator: nanart\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: _admin.php:34
+#: _admin.php:23
 msgid "dcLatestVersionsLight"
 msgstr "Dotclear dernières versions Light"
 
-#: _admin.php:34
+#: _admin.php:23
 msgid "Show the latest available versions of Dotclear in dashboard"
 msgstr "Montrer les dernières versions sur le tableau de bord"
 
-#: _admin.php:74
+#: _admin.php:63
 msgid "Dotclear latests versions light"
 msgstr "Dotclear dernières versions Light"
 
-#: _admin.php:116
+#: _admin.php:105
 msgid "Show Dotclear's latest versions on dashboard."
 msgstr "Montrer les dernières versions sur le tableau de bord"
 
-#: _admin.php:195
+#: _admin.php:184
 msgid "Download version"
 msgstr "Télécharger la version"
 
-#: _admin.php:215
+#: _admin.php:202
+msgid "able"
+msgstr "à même"
+
+#: _admin.php:202
+msgid "unable"
+msgstr "incapable"
+
+#: _admin.php:204
+msgid "Your PHP version %s is %s to support the future Dotclear version 2.19."
+msgstr "Votre version de PHP %s est %s de supporter la future version Dotclear 2.19."
+
+#: _admin.php:209
 msgid "Dotclear latests versions - light"
 msgstr "Dotclear dernières versions Light"
 
@@ -117,8 +128,8 @@ msgid "Preferences on Dashboard"
 msgstr "Préférences sur le tableau de bord"
 
 #: index.php:103
-msgid "also see below: "
-msgstr "voir aussi plus bas: "
+msgid "also see below:"
+msgstr "voir aussi plus bas:"
 
 #: index.php:110
 msgid "Your Dotclear version is %s - %s."
@@ -127,3 +138,7 @@ msgstr "Votre version Dotclear :  %s - %s."
 #: index.php:112
 msgid "Your php version is %s."
 msgstr "Votre version php : %s."
+
+msgid "Are you ready"
+msgstr "Êtes vous prêts ?"
+
