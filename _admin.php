@@ -198,11 +198,17 @@ class dcLatestVersionsLightAdmin
 		#plugin version
 			$p_version = $core->plugins->moduleInfo($p_name, 'version');
 
+        #msg
+            $ok = (version_compare(PHP_VERSION, '7.0.0') >= 0) ?__('able') :__('unable');
+            $type = (version_compare(PHP_VERSION, '7.0.0') >= 0) ?__('success') :__('warning');
+            $msg = sprintf(__('Your PHP version %s is %s to support the future Dotclear version 2.19.'), phpversion(), $ok);
+
 		# Display
         $items[] = new ArrayObject([
 		'<div class="box small" id="udclatestversionsitems">'.
 		'<h3>' .'<img src="' . dcPage::getPF("$module_id/icon-small.png") . '" alt="" /> ' .html::escapeHTML(__("Dotclear latests versions - light")) .'</h3>'.
 		'<ul>'.implode('', $li).'</ul>'.
+        '<p class="' .$type .'">' .$msg .'</p>'.
 		'</div>'
  ]);
 	}//adminDashboardItems
