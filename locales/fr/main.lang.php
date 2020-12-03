@@ -98,6 +98,6 @@ $GLOBALS['__l10n']['Your Dotclear version is %s - %s.'] = 'Votre version Dotclea
 #index.php:112
 $GLOBALS['__l10n']['Your php version is %s.'] = 'Votre version php : %s.';
 
-$GLOBALS['__l10n']['Are yu ready'] = 'Êtes vous prêts ?';
+$GLOBALS['__l10n']['Are you ready'] = 'Êtes vous prêts ?';
 
 ?>
