@@ -14,17 +14,21 @@ All notable changes to this project will be documented in this file.
 	### Github upload & support: https://github.com/nanart59/dcLatestVersionsLight
 
 ## [released]
-	### show on dashboard
-		#### version stable: link to https://fr.dotclear.org/
-		#### versions testing & unstable: publication date
-	### Dotclear version
+    ### Dotclear version
 		### Dotclear version 2.19 need php >= 7
+		### french translate
+## [unreleased]
+
 
 ## this module dcLatestVersionsLight
 ====================================
-## [1.15] - 2020/12/03
+## [1.16] - 2020/12/15
     ### Change
-        #### admin.php: alert if pvp version < 7.0.0
+        #### admin.php: del last space in __('unable ') //class dcLatestVersionsLightAdmin, function adminDashboardItems
+        #### langs: add french translates
+## [1.15] - 2020/12/15
+    ### Change
+        #### admin.php: alert if php version < 7.0.0
 ## [1.14] - 2020/10/15
 	### Change 
 		#### admin.php:		workspace 'dashboard' to old name : dcLatestVersionsLight ---- like in _define.php since version 1.1
