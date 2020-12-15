@@ -1,7 +1,7 @@
 <?php
 // Language: Français 
 // Module: dcLatestVersionsLight - 1.15
-// Date: 2020-12-03 16:24:24 
+// Date: 2020-12-15 15:02:58 
 // Translated with dcTranslater - 2013.05.11 
 
 #_admin.php:23
@@ -26,7 +26,7 @@ $GLOBALS['__l10n']['able'] = 'à même';
 $GLOBALS['__l10n']['unable'] = 'incapable';
 
 #_admin.php:204
-$GLOBALS['__l10n']['Your PHP version %s is %s to support the future Dotclear version 2.19.'] = 'Votre version de PHP %s est %s de supporter la future version Dotclear 2.19.';
+$GLOBALS['__l10n']['Your PHP version %s is %s to support the future Dotclear version 2.19.'] = 'Votre version PHP %s est %s de supporter la future version 2.19 de Dotclear.';
 
 #_admin.php:209
 $GLOBALS['__l10n']['Dotclear latests versions - light'] = 'Dotclear dernières versions Light';
@@ -97,7 +97,5 @@ $GLOBALS['__l10n']['Your Dotclear version is %s - %s.'] = 'Votre version Dotclea
 
 #index.php:112
 $GLOBALS['__l10n']['Your php version is %s.'] = 'Votre version php : %s.';
-
-$GLOBALS['__l10n']['Are you ready'] = 'Êtes vous prêts ?';
 
 ?>
