@@ -1,14 +1,14 @@
 # Language: Français
 # Module: dcLatestVersionsLight - 1.15
-# Date: 2020-12-03 16:24:24
+# Date: 2020-12-15 15:02:58
 # Translated with translater 2013.05.11
 
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
-"Project-Id-Version: dcLatestVersionsLight 1.14\n"
+"Project-Id-Version: dcLatestVersionsLight 1.15\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2020-12-03T16:24:24+00:00\n"
+"PO-Revision-Date: 2020-12-15T15:02:58+00:00\n"
 "Last-Translator: nanart\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -44,7 +44,7 @@ msgstr "incapable"
 
 #: _admin.php:204
 msgid "Your PHP version %s is %s to support the future Dotclear version 2.19."
-msgstr "Votre version de PHP %s est %s de supporter la future version Dotclear 2.19."
+msgstr "Votre version PHP %s est %s de supporter la future version 2.19 de Dotclear."
 
 #: _admin.php:209
 msgid "Dotclear latests versions - light"
@@ -138,7 +138,4 @@ msgstr "Votre version Dotclear :  %s - %s."
 #: index.php:112
 msgid "Your php version is %s."
 msgstr "Votre version php : %s."
-
-msgid "Are you ready"
-msgstr "Êtes vous prêts ?"
 
