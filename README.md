@@ -17,17 +17,10 @@ _(stable, testings and unstable)_
   * Dotclear 2.9
   * tested on php 5.6.40
 
- Dotclear versions requires:
+ Dotclear versions tested:
   * Dotclear 2.9 to 2.13: php 5.6.40
   * Dotclear 2.14 to 2.15: php 7.3.5
   * Dotclear 2.16+: php 7.4.1
- 
-## Important
-  * Php> = 7 is mandatory for the future Dotclear 2.19 version
-
-#### Dotclear versions & php versions see forum (fr) -> "Versions Dotclear & versions php", https://forum.dotclear.org/viewtopic.php?pid=344999
-### Dotclear upload & information: https://plugins.dotaddict.org/dc2/details/dcLatestVersionsLight
-### Dotclear support (fr): https://forum.dotclear.org/viewtopic.php?id=49826
 
 ## USAGE
 
@@ -59,17 +52,10 @@ _(stable, testings and unstable)_
   * Dotclear 2.9
   * testé sous php 5.6.40
 
- Dotclear versions demande:
+ Dotclear versions testées:
   * Dotclear 2.9 to 2.13: php 5.6.40
   * Dotclear 2.14 to 2.15: php 7.3.5
   * Dotclear 2.16+: php 7.4.1
-
-## Important
-  * Php >= 7 est exigé pour la version Dotclear 2.19 à venir
-
-#### Dotclear versions & php versions voir sur forum (fr) -> "Versions Dotclear & versions php", https://forum.dotclear.org/viewtopic.php?pid=344999
-### Dotclear upload & information: https://plugins.dotaddict.org/dc2/details/dcLatestVersionsLight
-### Dotclear support (fr): https://forum.dotclear.org/viewtopic.php?id=49826
 
 ## USAGE
 
