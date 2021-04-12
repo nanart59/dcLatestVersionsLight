@@ -15,13 +15,18 @@ All notable changes to this project will be documented in this file.
 
 ## [released]
     ### Dotclear version
-		### Dotclear version 2.19 need php >= 7
+		### Dotclear version 2.19 need php >= 7.3
 		### french translate
 ## [unreleased]
 
 
 ## this module dcLatestVersionsLight
 ====================================
+## [1.17] - 2021/04/12
+    ### Change
+        #### Dotclear version 2.19 nedd php 7.3
+        #### use $phpneeded php version nedeed in _admin
+        #### set alert / need php version to $phpneeded
 ## [1.16] - 2020/12/15
     ### Change
         #### admin.php: del last space in __('unable ') //class dcLatestVersionsLightAdmin, function adminDashboardItems
